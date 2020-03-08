@@ -7,7 +7,7 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |key|
     puts key
     if name == key[:item]
-      return name
+      return key
     end
   end
 
