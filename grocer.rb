@@ -66,6 +66,7 @@ def apply_clearance(cart)
   #
   # REMEMBER: This method **should** update cart
   cart.map do |key|
+    binding.pry
     if key[:clearance] == true
       key[:price] = (key[:price] * 0.8).round(2)
     end
