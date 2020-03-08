@@ -39,7 +39,6 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   counter = 0
   while counter < coupons.length
-  coupons.each do |key|
     item = find_item_by_name_in_collection(key[:item], cart)
     puts item
     coupon_item = "#{key[:item]} W/COUPON"
@@ -58,7 +57,8 @@ def apply_coupons(cart, coupons)
       item[:count] -= key[:num]
   end
 end
-  cart
+counter +=1
+endcart
 end
 
 def apply_clearance(cart)
