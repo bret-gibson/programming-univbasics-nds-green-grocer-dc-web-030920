@@ -84,10 +84,8 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
   consolidated_cart = consolidate_cart(cart)
-  puts consolidated_cart
   couponed_cart = apply_coupons(consolidated_cart, coupons)
   final_cart = apply_clearance(couponed_cart)
-
   grand_total = 0
   final_cart.each do |key|
     grand_total += (key[:price] * key[:count])
@@ -95,7 +93,6 @@ def checkout(cart, coupons)
   if grand_total > 100
     grand_total -= (grand_total * 0.1)
   end
-  puts grand_total
   return grand_total
 end
 
