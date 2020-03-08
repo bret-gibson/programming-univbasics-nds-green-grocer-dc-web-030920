@@ -11,6 +11,7 @@ def find_item_by_name_in_collection(name, collection)
       return output
     else
       output = nil
+      return output
     end
 
   end
