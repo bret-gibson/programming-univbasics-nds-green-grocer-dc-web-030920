@@ -65,8 +65,10 @@ def apply_clearance(cart)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  cart.map do |key|
 
-  
+  end
+
 end
 
 def checkout(cart, coupons)
