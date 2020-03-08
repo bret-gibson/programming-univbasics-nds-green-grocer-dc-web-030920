@@ -14,7 +14,6 @@ def find_item_by_name_in_collection(name, collection)
     puts output
     return output
   end
-  return output
 end
 
 def consolidate_cart(cart)
