@@ -9,11 +9,9 @@ def find_item_by_name_in_collection(name, collection)
     if name == key[:item]
       output = key
       return output
-    else
-      output = nil
-      return output
     end
   end
+  return output
 end
 
 def consolidate_cart(cart)
