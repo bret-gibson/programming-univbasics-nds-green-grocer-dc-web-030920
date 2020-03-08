@@ -90,6 +90,5 @@ def checkout(cart, coupons)
   new_cart.each do |key|
     grand_total += (key[:price] * key[:count])
   end
-
-
+  puts grand_total
 end
