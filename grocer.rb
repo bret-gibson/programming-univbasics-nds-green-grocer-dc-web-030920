@@ -38,6 +38,10 @@ def apply_coupons(cart, coupons)
   #
   # REMEMBER: This method **should** update cart
   coupons.each do |key|
+    item = find_item_by_name_in_collection(key[:item], cart)
+    coupon_item = "#{key[:item]} W/COUPON"
+    item_with_coupon = find_item_by_name_in_collection(coupon_item, cart)
+    if item && item[:count] >= key[:num]
   end
 end
 
