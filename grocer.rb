@@ -37,6 +37,8 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
+  counter = 0
+  while counter < coupons.length
   coupons.each do |key|
     item = find_item_by_name_in_collection(key[:item], cart)
     puts item
