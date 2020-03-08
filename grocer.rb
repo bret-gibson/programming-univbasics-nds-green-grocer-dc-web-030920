@@ -17,7 +17,7 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   new_cart = []
   cart.each do |key|
-    new_item = find_item_by_name_in_collection(k[:item], new_cart)
+    new_item = find_item_by_name_in_collection(key[:item], new_cart)
     if new_item != nil
       new_item[:count] += 1
     else
