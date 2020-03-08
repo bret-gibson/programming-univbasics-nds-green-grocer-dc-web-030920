@@ -42,6 +42,7 @@ def apply_coupons(cart, coupons)
     coupon_item = "#{key[:item]} W/COUPON"
     item_with_coupon = find_item_by_name_in_collection(coupon_item, cart)
     if item && item[:count] >= key[:num]
+      item_with_coupon[:count] += key[:num]
   end
 end
 
