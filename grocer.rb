@@ -95,14 +95,3 @@ def checkout(cart, coupons)
   end
   return grand_total
 end
-
-=begin
-grand_total = 0
-final_cart.each do |key|
-  grand_total += (key[:price] * key[:count])
-end
-if grand_total > 100
-  total -= (total * 0.1)
-end
-puts grand_total
-=end
