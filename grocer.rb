@@ -87,7 +87,8 @@ def checkout(cart, coupons)
   apply_coupons(new_cart, coupons)
   apply_clearance(new_cart)
   new_cart.each do |key|
-    puts keyend
+    puts key
+  end
 
 
 end
