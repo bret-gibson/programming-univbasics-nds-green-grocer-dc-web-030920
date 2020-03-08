@@ -83,10 +83,10 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-  new_cart = consolidate_cart(cart)
+  consolidated_cart = consolidate_cart(cart)
   puts new_cart
-  apply_coupons(new_cart, coupons)
-  apply_clearance(new_cart)
+  couponed_cart = apply_coupons(new_cart, coupons)
+  final_cart = apply_clearance(new_cart)
   grand_total = 0
   new_cart.each do |key|
     grand_total += (key[:price] * key[:count])
