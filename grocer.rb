@@ -86,14 +86,15 @@ def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
   couponed_cart = apply_coupons(consolidated_cart, coupons)
   final_cart = apply_clearance(couponed_cart)
-  =begin
-  grand_total = 0
-  final_cart.each do |key|
-    grand_total += (key[:price] * key[:count])
-  end
-  if grand_total > 100
-    total -= (total * 0.1)
-  end
-  puts grand_total
-  =end
 end
+
+=begin
+grand_total = 0
+final_cart.each do |key|
+  grand_total += (key[:price] * key[:count])
+end
+if grand_total > 100
+  total -= (total * 0.1)
+end
+puts grand_total
+=end
