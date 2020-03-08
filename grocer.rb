@@ -12,6 +12,7 @@ def find_item_by_name_in_collection(name, collection)
       output = nil
     end
   end
+  puts output
   return output
 end
 
