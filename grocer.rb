@@ -93,7 +93,7 @@ def checkout(cart, coupons)
     grand_total += (key[:price] * key[:count])
   end
   if grand_total > 100
-    total -= (total * 0.1)
+    grand_total -= (grand_total * 0.1)
   end
   puts grand_total
   return grand_total
