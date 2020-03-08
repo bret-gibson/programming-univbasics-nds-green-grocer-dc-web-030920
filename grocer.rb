@@ -30,7 +30,6 @@ def consolidate_cart(cart)
       new_cart << new_item
   end
 end
-puts new_cart
   new_cart
 end
 
